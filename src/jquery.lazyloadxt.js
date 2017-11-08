@@ -215,6 +215,7 @@
                         src = $isFunction(srcAttr) ? srcAttr($el) : el.getAttribute(srcAttr);
 
                     if (src) {
+                        el.src = '';
                         el.src = src;
                     }
 
