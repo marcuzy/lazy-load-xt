@@ -1,6 +1,6 @@
-/*! Lazy Load XT v1.1.0 2016-01-12
+/*! Lazy Load XT v1.1.0 2018-02-19
  * http://ressio.github.io/lazy-load-xt
- * (C) 2016 RESS.io
+ * (C) 2018 RESS.io
  * Licensed under MIT */
 
 (function ($, window, document, undefined) {
@@ -214,6 +214,7 @@
                         src = $isFunction(srcAttr) ? srcAttr($el) : el.getAttribute(srcAttr);
 
                     if (src) {
+                        el.src = '';
                         el.src = src;
                     }
 
